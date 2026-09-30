@@ -1,15 +1,24 @@
 import { Outlet } from 'react-router-dom'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 
 export function AppLayout() {
   return (
-    <div className="app-shell">
+    <Box className="app-shell">
       <Header />
-      <main className="app-main">
-        <Outlet />
-      </main>
+      <Box component="main" className="app-main">
+        <Container maxWidth="lg">
+          <Grid container spacing={{ xs: 3, md: 6 }}>
+            <Grid size={{ xs: 12 }}>
+              <Outlet />
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
       <Footer />
-    </div>
+    </Box>
   )
 }

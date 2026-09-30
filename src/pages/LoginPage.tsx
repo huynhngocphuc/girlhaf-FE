@@ -1,4 +1,7 @@
 import { useNavigate } from 'react-router-dom'
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
 import { setCredentials } from '@/features/auth/authSlice'
 import { useAppDispatch } from '@/app/hooks'
 
@@ -17,15 +20,22 @@ export function LoginPage() {
   }
 
   return (
-    <section className="page-section narrow">
-      <p className="eyebrow">Private route</p>
-      <h1>Sign in</h1>
-      <p className="lead">
-        Authentication wiring is ready for the backend contract.
-      </p>
-      <button type="button" onClick={handleDemoLogin}>
+    <Box component="section" className="page-section narrow auth-panel">
+      <Typography className="eyebrow" variant="overline">
+        Private route / 02
+      </Typography>
+      <Typography variant="h1">Sign in.</Typography>
+      <Typography className="lead" variant="body1">
+        Your private edit starts here. Authentication wiring is ready for the
+        backend contract.
+      </Typography>
+      <Button
+        className="primary-action"
+        variant="contained"
+        onClick={handleDemoLogin}
+      >
         Continue with demo account
-      </button>
-    </section>
+      </Button>
+    </Box>
   )
 }
