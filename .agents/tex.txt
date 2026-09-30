@@ -1,0 +1,11 @@
+Skill	Dùng để
+design-taste-frontend	Thiết kế frontend tổng quát
+gpt-tasteskill	Biến thể nghiêm ngặt hơn cho GPT/Codex
+redesign-skill	Audit + redesign website hiện có
+minimalist-skill	UI tối giản, editorial
+soft-skill	UI mềm, premium, nhiều whitespace
+brutalist-skill	Brutalist / Swiss / mechanical
+image-to-code-skill	Phân tích reference image rồi code theo
+output-skill	Ngăn AI bỏ dở, để placeholder
+brandkit	Tạo định hướng brand
+imagegen-frontend-web	Tạo reference hình ảnh cho website

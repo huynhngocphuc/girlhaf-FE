@@ -1,0 +1,118 @@
+:root {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1f2933;
+  background: #f4f0e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #1f2933;
+  cursor: pointer;
+  font: inherit;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 6vw;
+  background: #e5ddd0;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.app-main {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  padding: 5rem 6vw;
+  background: linear-gradient(135deg, #f4f0e8 0%, #d9e6e2 100%);
+}
+
+.page-section {
+  width: min(760px, 100%);
+}
+
+.page-section.narrow {
+  width: min(460px, 100%);
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #a14432;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.95;
+}
+
+.lead {
+  max-width: 42rem;
+  margin: 1.5rem 0 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.site-footer {
+  color: #59636b;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .site-header,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
